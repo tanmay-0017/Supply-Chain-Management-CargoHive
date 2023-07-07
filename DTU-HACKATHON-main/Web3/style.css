@@ -1,0 +1,74 @@
+body {
+  background: linear-gradient(to bottom right, #6c77cb, #61ddb6);
+  color: #444444;
+  font-family: 'Roboto', sans-serif;
+}
+ h2, h3 {
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 1px 1px #000000;
+}
+ #myVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+ hr {
+  background-color: #ffffff;
+  height: 2px;
+  margin-bottom: 20px;
+  border: none;
+}
+ form {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+ label {
+  font-weight: bold;
+}
+ input[type="text"], input[type="number"], textarea {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  color: #444444;
+  background-color: #f2f2f2;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+}
+ button {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  background-color: #3b5998;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+
+button:hover {
+  background-color: #1d3b72;
+  transform: scale(1.01);
+}
+ @media only screen and (max-width: 767px) {
+  h2 {
+    font-size: 24px;
+  }
+}

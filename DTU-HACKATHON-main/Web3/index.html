@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Supply Chain Management Form</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+   <link rel="stylesheet" href="/style.css">
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+   <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+
+
+   <script src="/s2.js"></script>
+
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
+   <script src="https://unpkg.com/jspdf-autotable@3.5.22/dist/jspdf.plugin.autotable.js"></script>
+
+
+
+
+
+
+</head>
+<body>
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <div class="container">
+       <video autoplay muted loop id="myVideo">
+           <source src="container-23759.mp4" type="video/mp4">
+       </video>
+       <h2>Create Product</h2>
+       <form>
+       <div class="form-group">
+           <label for="name">Product Name:</label>
+           <input type="text" class="form-control" id="name" placeholder="Enter product name">
+       </div>
+       <div class="form-group">
+           <label for="quantity">Quantity:</label>
+           <input type="number" class="form-control" id="quantity" placeholder="Enter quantity" min="0">
+       </div>
+       <div class="form-group">
+           <label for="amount">Amount:</label>
+           <input type="number" class="form-control" id="amount" placeholder="Enter Amount" min="0">
+       </div>
+       <div class="form-group">
+           <label for="manufacturer">Name of Manufacturer:</label>
+           <input type="text" class="form-control" id="manufacturer" placeholder="Enter Manufacturer name">
+       </div>
+       <button type="button" class="btn btn-primary" onclick="createProduct()">Create Product</button>
+       </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <hr>
+      
+       <h3>Add History</h3>
+       <form>
+       <div class="form-group">
+           <label for="product-id">Product ID:</label>
+           <input type="number" class="form-control" id="productId" placeholder="Enter product ID">
+       </div>
+       <div class="form-group">
+           <label for="history">History:</label>
+           <textarea class="form-control" id="history" rows="3"></textarea>
+       </div>
+       <button type="button" class="btn btn-primary" onclick="addHistory()">Add History</button>
+       </form>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <hr>
+      
+       <h3>Get All Products</h3>
+       <button type="button" class="btn btn-primary" onclick="getAllProducts()">Get All Products</button>
+       <div style="color: white" id="productTable"></div>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <hr>
+      
+       <h3>Product Count</h3>
+       <button type="button" class="btn btn-primary" onclick="getProductCount()">Product Count</button>
+       <div style="color: white" id="productCount"></div>
+
+
+      
+       <hr>
+      
+
+
+
+
+
+      
+
+
+
+
+       <h3>Get Product</h3>
+       <form>
+       <div class="form-group">
+           <label for="product-id2">Product ID:</label>
+           <input type="number" class="form-control" id="product-id2" placeholder="Enter product ID">
+       </div>
+       <button type="button" class="btn btn-primary" onclick="getProduct()">Get Product</button>
+       </form>
+       <div style="color: white" id="product-info"></div>
+
+
+       <hr>
+
+
+      
+
+
+
+       <h2>Create Bill</h2>
+       <form>
+       <div class="form-group">
+           <label for="product-id2">Product ID:</label>
+           <input type="number" class="form-control" id="product-id1" placeholder="Enter product ID" min="0">
+       </div>
+       <button type="button" class="btn btn-primary" onclick="createbills()">Create Bill</button>
+       </form>
+
+
+
+
+
+      
+   </div>
+
+
+</body>
+</html>
